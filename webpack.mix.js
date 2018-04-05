@@ -12,4 +12,7 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+   .sass('resources/assets/sass/app.scss', 'public/css').version();
+
+mix.styles(['node_modules/tui-grid/dist/tui-grid.css'],'public/css/tui-grid.css');
+mix.styles(['node_modules/tui-pagination/dist/tui-pagination.css'],'public/css/tui-pagination.css');
